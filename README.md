@@ -15,4 +15,4 @@ The objective of this project is to create a cloud-based application that provid
 # Autoscaling
 
 The app tier is autoscaled by leveraging AWS CloudWatch. For autoscaling, we followed the steps:
-Create an autoscale group with the desired Apptier launch template.This launch template contains the required Apptier jar and systemctl script to execute the jar on instance boot up.To autoscale through alarms, we create cloudwatch alarms based on request queue and response queue size. We tried different alarm metrics to test all scenarios and find the best one that suits our case ( explained in the same section)
+Create an autoscale group with the desired Apptier launch template.This launch template contains the required Apptier jar and systemctl script to execute the jar on instance boot up.To autoscale through alarms, we create cloudwatch alarms based on request queue and response queue size. We tried different alarm metrics to test all scenarios and find the best one that suits our case.
